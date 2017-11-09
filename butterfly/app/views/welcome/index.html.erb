@@ -1,0 +1,69 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<meta name="viewport"
+  content="width=device-width; initial-scale=1">
+<div id="phone">
+  <section id="welcome-screen" class="screen">
+    <h1>Welcome to Butterfly!</h1>
+    <form>
+      <input type="text" name="username" placeholder="username">
+      <input type="password" name="password" placeholder="password">
+      <button type="button" onclick="goToHome()">Be Social</button>
+      <div class="center">
+        <a href="">Sign up</a>
+      </div>
+    </form>
+    <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
+  </section>
+
+  <section id="home" class="screen">
+    <!-- Number of people I was social with -->
+    <div id="social-with" class="circle"></div>
+    <!-- Number of Minutes being social -->
+    <div id="minutes-social"  class="circle"></div>
+    <!-- Most social with -->
+    <div id="my-person"  class="circle"></div>
+    <!-- Most Social at -->
+    <div id="my-place"  class="circle"></div>
+    <!-- Button to be social -->
+    <button id="be-social">BE SOCIAL</button>
+    <!-- Log out -->
+    <button id="log-out">log out</button>
+  </section>
+
+  <section id="social" class="screen">
+    <div id="leave"></div>
+
+    <div id="circle">
+      <!-- Peoples faces inside here
+        On load, just my face
+        For every second, add a face, up to five,
+        faces will animate around the cicle when they come in
+
+        There is a timer in the middle, showing the current social
+        time spent together
+      -->
+    </div>
+
+    <h2>
+      <!-- Name of the place inside here -->
+    </h2>
+
+  </section>
+
+  <section id="register" class="screen">
+    <div id="errors"></div>
+    <form>
+      <!-- This has fields to sign in with
+        It will also have a way to display user errors
+        with form data on attempt to register
+       -->
+    </form>
+    <a>Go back to login</a>
+  </section>
+</div>

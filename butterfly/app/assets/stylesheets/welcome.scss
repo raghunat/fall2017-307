@@ -1,0 +1,247 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Patrick+Hand');
+body {
+  background-color: black;
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#phone {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.screen {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease-out;
+  box-shadow: 0 0 5px black;
+}
+
+#welcome-screen {
+  background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/SsLYSh45lizrfzvep/videoblocks-happy-family-having-fun-together-at-the-couch-at-the-living-room-father-mother-and-daughter-sitting-on-the-sofa-relaxing-playing-games-and-laughing_spdqamual_thumbnail-full01.png);
+  background-size: cover;
+  background-position: -600px;
+}
+
+#welcome-screen h1 {
+  text-align: center;
+  margin-top: 40px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 4em;
+  margin-bottom: 200px;
+  color: #FFFAD5;
+  text-shadow: 2px 2px 5px black;
+}
+
+#welcome-screen input {
+  background-color: rgba(0,0,0, 0.1);
+  font-size: 2.5em;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: none;
+  box-shadow: inset 1px 1px 5px black;
+  text-align: center;
+  color: white;
+}
+
+#welcome-screen input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .5);
+}
+
+#welcome-screen button {
+  box-sizing: border-box;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 8px;
+  font-size: 2em;
+  background-color: #BD4932;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 2px 2px 10px black,
+    inset 2px 2px 5px rgba(255,255,255, .3);
+  color: #FFFAD5;
+}
+
+#welcome-screen a {
+  font-size: 1.5em;
+}
+
+#welcome-screen a:visited {
+  color: inherit;
+}
+
+.center {
+  text-align: center;
+}
+
+/*  home screen styles */
+
+#home {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 40% 10%;
+  background-color: white;
+  left: 100%;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 40px;
+
+  background-size: 100px;
+  background-position: center;
+}
+#social-with {
+  background: blue;
+}
+
+#minutes-social {
+  background: blue;
+}
+
+#my-person {
+}
+
+#my-place {
+}
+
+#be-social {
+  grid-column-end: span 2;
+  grid-row-start: 3;
+}
+
+#log-out {
+  grid-column-end: span 2;
+  grid-row-start: 4;
+}
+
+#welcome-screen .sk-folding-cube {
+  transform: translateY(-200px);
+}
+
+
+.sk-folding-cube {
+  display: none;
+  margin: 20px auto;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.sk-folding-cube .sk-cube {
+  float: left;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.sk-folding-cube .sk-cube:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+          animation: sk-foldCubeAngle 2.4s infinite linear both;
+  -webkit-transform-origin: 100% 100%;
+      -ms-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.sk-folding-cube .sk-cube2 {
+  -webkit-transform: scale(1.1) rotateZ(90deg);
+          transform: scale(1.1) rotateZ(90deg);
+}
+.sk-folding-cube .sk-cube3 {
+  -webkit-transform: scale(1.1) rotateZ(180deg);
+          transform: scale(1.1) rotateZ(180deg);
+}
+.sk-folding-cube .sk-cube4 {
+  -webkit-transform: scale(1.1) rotateZ(270deg);
+          transform: scale(1.1) rotateZ(270deg);
+}
+.sk-folding-cube .sk-cube2:before {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.sk-folding-cube .sk-cube3:before {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.sk-folding-cube .sk-cube4:before {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+@-webkit-keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-foldCubeAngle {
+  0%, 10% {
+    -webkit-transform: perspective(140px) rotateX(-180deg);
+            transform: perspective(140px) rotateX(-180deg);
+    opacity: 0;
+  } 25%, 75% {
+    -webkit-transform: perspective(140px) rotateX(0deg);
+            transform: perspective(140px) rotateX(0deg);
+    opacity: 1;
+  } 90%, 100% {
+    -webkit-transform: perspective(140px) rotateY(180deg);
+            transform: perspective(140px) rotateY(180deg);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// blank

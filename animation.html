@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+
+    <div style="width:100px; height:100px; outline:5px solid black"></div>
+    <button onclick="start()">START</button>
+    <div id="loading" style="pointer-events: none;transform:translate(0,-100%);opacity:0">Loading</div>
+    <div id="loading-bar" style="width:0"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script>
+      alert("Here we go!");
+
+      var box = document.querySelector('div');
+      var button = document.querySelector('button');
+      var loadingText = document.querySelector('#loading');
+      var loadingBar = document.querySelector('#loading-bar');
+
+      TweenMax.to(box, 3, {
+        height: '200px',
+        width: '200px',
+        rotation: 720,
+        rotationY: 360,
+        x: 100,
+        y: 300
+      });
+
+      TweenMax.to(box, 3, {
+        scale: 0.1
+      });
+
+    function start() {
+      var timeline = new TimelineMax();
+      timeline.to(button, .4, {
+        y: -20
+      }).to(button, .3, {
+        y:60,
+        opacity: 0
+      });
+
+
+      timeline.to(loadingText, .2, {
+        opacity: 1
+      });
+
+      timeline.to(loadingBar, 2, {
+        borderColor: 'black',
+        borderWidth: 1,
+        borderStyle: 'solid',
+        width: '40px',
+        repeat: -1,
+        yoyo: true
+      });
+    }
+    </script>
+  </body>
+</html>
