@@ -142,6 +142,116 @@ body {
   transform: translateY(-200px);
 }
 
+#social {
+  display: none; //removed for development
+  background-color: #092140;
+
+  #leave {
+    width: 80%;
+    height: 57px;
+    background-color: #F24738;
+    margin: 20px auto;
+    color: #092140;
+    text-align: center;
+    line-height: 57px;
+    font-size: 2em;
+  }
+
+  #circle {
+    width: 325px;
+    height: 325px;
+    border: solid 5px #F2C777;
+    border-radius: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 325px;
+    font-size: 4em;
+    text-align: center;
+  }
+
+  #images img {
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    box-shadow: 0 0 5px black;
+    position: absolute;
+    transition: left 1s, top 1s;
+  }
+
+  .state1 img:nth-child(1) {
+    top: -45px;
+    left: 120px;
+  }
+
+  .state2 img:nth-child(1) {
+    top: 120px;
+    left: -35px;
+  }
+  .state2 img:nth-child(2) {
+    top: 115px;
+    left: 270px;
+  }
+
+  .state3 img:nth-child(1) {
+    top: 220px;
+    left: -10px;
+  }
+  .state3 img:nth-child(2) {
+    top: 220px;
+    left: 250px;
+  }
+  .state3 img:nth-child(3) {
+    top: -45px;
+    left: 120px;
+  }
+
+  .state4 img:nth-child(1) {
+    top: 220px;
+    left: -10px;
+  }
+  .state4 img:nth-child(2) {
+    top: 220px;
+    left: 250px;
+  }
+  .state4 img:nth-child(3) {
+    top: 10px;
+    left: -10px;
+  }
+  .state4 img:nth-child(4) {
+    top: 10px;
+    left: 250px;
+  }
+
+
+  .state5 img:nth-child(1) {
+    top: 250px;
+    left: 30px;
+  }
+  .state5 img:nth-child(2) {
+    top: 250px;
+    left: 210px;
+  }
+  .state5 img:nth-child(3) {
+    top: 30px;
+    left: -20px;
+  }
+  .state5 img:nth-child(4) {
+    top: 30px;
+    left: 260px;
+  }
+  .state5 img:nth-child(5) {
+    top: -45px;
+    left: 120px;
+  }
+
+}
+
+#register {
+  display: none;
+}
+
 
 .sk-folding-cube {
   display: none;

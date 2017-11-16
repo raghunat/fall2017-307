@@ -22,5 +22,55 @@ class WelcomeController < ApplicationController
     }
   end
 
+  def one_person
+    render json: [{
+      pic: 'https://material-components-web.appspot.com/images/animal3.svg'
+    }]
+  end
+
+  def two_people
+    render json: [{
+      pic: 'https://material-components-web.appspot.com/images/animal3.svg'
+    }, {
+      pic: 'https://material-components-web.appspot.com/images/animal2.svg'
+    }]
+  end
+
+  def three_people
+    render json: [{
+      pic: 'https://material-components-web.appspot.com/images/animal3.svg'
+    }, {
+      pic: 'https://material-components-web.appspot.com/images/animal2.svg'
+    }, {
+      pic: 'https://bootdey.com/img/Content/avatar/avatar6.png'
+    }]
+  end
+
+  def four_people
+    render json: [{
+      pic: 'https://material-components-web.appspot.com/images/animal3.svg'
+    }, {
+      pic: 'https://material-components-web.appspot.com/images/animal2.svg'
+    }, {
+      pic: 'https://bootdey.com/img/Content/avatar/avatar6.png'
+    }, {
+      pic: 'http://www.conveyancemarketinggroup.com/subconveyance/wp-content/uploads/2015/09/Carolyn-Dobson-avatar-VPBD.png'
+    }]
+  end
+
+  def five_people
+    render json: [{
+      pic: 'https://material-components-web.appspot.com/images/animal3.svg'
+    }, {
+      pic: 'https://material-components-web.appspot.com/images/animal2.svg'
+    }, {
+      pic: 'https://bootdey.com/img/Content/avatar/avatar6.png'
+    }, {
+      pic: 'http://www.conveyancemarketinggroup.com/subconveyance/wp-content/uploads/2015/09/Carolyn-Dobson-avatar-VPBD.png'
+    }, {
+      pic: 'http://s3.envato.com/files/106310.jpg'
+    }]
+  end
+
 
 end
